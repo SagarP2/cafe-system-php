@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222222;
+    line-height: 1.6;
+}
+.fixed-header {
+    position:fixed;
+    
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    opacity: calc(70%);
+    color: white;
+    z-index: 1000;
+    padding: 10px 0;
+    height:100px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    
+}
+
+.fixed-header nav ul {
+    list-style-type:none;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.fixed-header nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#user-name{
+    font-size: 18px;
+}
+.logo {
+    padding-left: 50px; /* Adjusts padding as needed */ 
+}
+
+.logo img {
+    width: 200px; /* Adjusts the logo size if necessary */
+    cursor: pointer;
+}
+
+.hero {
+    background: url('/img/cafe.jpg') no-repeat center center/cover;
+    box-shadow: inset 100px 100px 150px rgba(0, 0, 0,0.9);
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -140px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.book-table {
+    background-color: #6554ff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-right: 24px;
+    border: 1px;
+    width: 150px;
+    color: white;
+
+}
+.book-table:hover{
+    background-color: #0033ff;
+}
+.online-order {
+    background-color: #6554ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-left: 11px;
+    border: 1px;
+    width: 150px;
+}
+.online-order:hover{
+    background-color: #0033ff;
+}
+.main-btn {
+    background-color: #6554ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-left: 11px;
+    border: 1px;
+    width: 150px;
+}
+.main-btn:hover{
+    background-color: #0033ff;
+}
+.book-table a,.online-order a,.main-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    background-color: #009578;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color:#007b5c;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.gallery-container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    white-space: nowrap;
+    background:rgb(51, 51, 51);
+    border-radius: 20px;
+    color: white;
+}
+
+.gallery-track {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.gallery-item {
+    min-width: 300px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #565656;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+    align-items: start;
+}
+
+.gallery-item img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 7px;
+}
+
+.gallery-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.gallery-item p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.contact-container{
+    background-color:rgb(51, 51, 51);
+    border-radius: 15px;
+    color: white;
+    
+}
+/* Main container for the menu */
+.menu-container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background: rgb(51, 51, 51);
+    border-radius: 20px;
+    color: white;
+    width: fit-content;
+    margin: 0;
+}
+
+.menu-track{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* Track for menu items (responsive flex layout) */
+.menu-img {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Added for better spacing */
+    width: 100%;
+    padding: 15px;
+}
+
+/* Individual menu items */
+.menu-item {
+    width: 210px;
+    height: 300px;
+    margin: 21.1px;
+    padding: 16px;
+    background-color: #565656;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Image styling for menu items */
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image fits properly */
+}
+
+/* Text styling for menu items */
+.menu-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.item_name{
+    width: auto;
+    height: 65px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Button styling for menu items */
+.menu-item .btn {
+    padding: 10px 15px;
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item .btn:hover {
+    background-color: #008e7d;
+}
+
+.success-message {
+    position: fixed;
+    bottom: 60px;
+    left: 760px;
+    background-color: #f5f5f5; /* Green for success */
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    z-index: 1000;
+    animation: fadeInOut 2.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    10%, 90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section.contact {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* Contact Form Styles */
+.contact-form-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.btn:active {
+    transform: scale(1);
+}
+
+/* Form Message */
+.form-message {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-card {
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

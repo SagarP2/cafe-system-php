@@ -1,0 +1,134 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3e3e3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Align the login container to the right */
+  align-items: center;
+  height: 100vh;
+  background-image: url("/img/loginimg.png");
+  background-size: contain; /* Adjust the size of the image */
+  background-repeat: no-repeat;
+  background-position: left center; /* Position the image on the left side */
+}
+
+.login-container {
+  margin-right: 250px;
+  width: 500px;
+}
+
+.login-container h1 {
+  margin-bottom: 50px;
+  color: #541a1a;
+  font-size: 45px;
+  font-family: 'Papyrus', 'fantasy';
+}
+
+.input-group {
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 23px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #541a1a;
+}
+
+.input-group input {
+  width: 100%; /* Full width input fields */
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: transparent;
+}
+
+.btn-login {
+  background-color: #541a1a;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 523px;
+}
+
+.btn-login:hover {
+  background-color: #70241c;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #2d1b1b;
+}
+
+.signup-link a {
+  color: #772219;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+/* Tablets and smaller devices (up to 768px) */
+@media screen and (max-width: 768px) {
+  body {
+      background-size: cover;
+      justify-content: center; /* Center the login container */
+      background-position: center; /* Center the background image */
+  }
+
+  .login-container {
+      margin-right: 0;
+      width: 90%; /* Adjust width to fit smaller screens */
+  }
+
+  .login-container h1 {
+      font-size: 35px; /* Smaller font size for tablets */
+  }
+
+  .btn-login {
+      width: 100%; /* Button takes full width */
+  }
+}
+
+/* Mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  body {
+      background-size: cover;
+      justify-content: center; /* Center the login container */
+      background-position: top center; /* Adjust the position of the background image */
+      padding: 10px; /* Add padding to prevent edges from touching */
+  }
+
+  .login-container {
+      width: 100%; /* Full width for mobile */
+  }
+
+  .login-container h1 {
+      font-size: 28px; /* Smaller font size for mobile */
+  }
+
+  .input-group label {
+      font-size: 18px; /* Smaller label font */
+  }
+
+  .input-group input {
+      padding: 8px; /* Adjust padding for mobile */
+  }
+
+  .btn-login {
+      font-size: 18px; /* Smaller button font */
+      width: 100%; /* Button takes full width */
+  }
+}
