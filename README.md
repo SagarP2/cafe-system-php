@@ -1,6 +1,6 @@
 📌 Cafe System in PHP
 
-A fully functional Cafe Management System built with PHP and MySQL. This system helps manage cafe operations efficiently, including orders, menu items, inventory, and billing.
+A fully functional Cafe Management System built with PHP and xampp. This system helps manage cafe operations efficiently, including orders, menu items, inventory, and billing.
 
 🚀 Features
 
@@ -18,7 +18,7 @@ A fully functional Cafe Management System built with PHP and MySQL. This system 
 
 🛠 Tech Stack
 
-Backend: PHP, MySQL
+Backend: PHP, Xampp
 
 Frontend: HTML, CSS, JavaScript
 
