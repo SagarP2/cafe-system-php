@@ -1,8 +1,8 @@
-📌 Cafe System in PHP
+# 📌 Cafe System in PHP
 
 A fully functional Cafe Management System built with PHP and xampp. This system helps manage cafe operations efficiently, including orders, menu items, inventory, and billing.
 
-🚀 Features
+# 🚀 Features
 
 ✅ User Authentication (Admin & Staff)
 
@@ -16,7 +16,7 @@ A fully functional Cafe Management System built with PHP and xampp. This system 
 
 ✅ Responsive UI
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 
 Backend: PHP, Xampp
 
@@ -24,7 +24,7 @@ Frontend: HTML, CSS, JavaScript
 
 Libraries: Bootstrap, jQuery
 
-📌 Installation
+# 📌 Installation
 
 1️⃣ Clone the repository:
 
@@ -64,12 +64,12 @@ Open the browser and go to:
 
 http://localhost/cafe-system-php/
 
-🤝 Contributing
+# 🤝 Contributing
 
 Feel free to submit issues, fork the repository, and send pull requests to improve the project.
 
-📧 Contact
+# 📧 Contact
 
 For any queries, reach out to me on:
 
-📩 Sagar P - GitHub Profile
+# 📩 Sagar P - GitHub Profile
